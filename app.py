@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, jsonify, session
 from flask_cors import CORS
+import os
+os.environ["DATABASE_URL"] = "postgresql://postgres:1306@localhost:5432/bank_app"
 
 import uuid
 
